@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./imagem/calculadora.png"
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <h1 class="title">Gorjeta</h1>
+      </div>
+      <div>
+        <form class="tipsForm" id="tipsForm">
+          <label for="bill">
+            <p>Estimado Cliente..!!</p>
+            <p>Quanto ficou a conta.?</p>
+          </label>
+          <p>
+            R$
+            <input
+              type="number"
+              placeholder="100"
+              name="bill"
+              id="bill"
+              class="formInput"
+              required
+            />
+          </p>
+          <label for="serviceQual">
+            <p>Como foi seu serviço.?</p>
+          </label>
+          <p>
+            <select
+              name="serviceQual"
+              id="serviceQual"
+              class="formSelect"
+              required
+            >
+              <option disable selected vlaue="0">Escolha uma opção</option>
+              <option value="0.30">30% - Increivel</option>
+              <option value="0.20">20% - Bom</option>
+              <option value="0.15">15% - Aceitavel</option>
+              <option value="0.10">10% - Ruim</option>
+              <option value="0.5">05% - Pessimo</option>
+            </select>
+          </p>
+          <label for="people">
+            <p>Quantas pessoas vão dividir a conta.?</p>
+          </label>
+          <p>
+            <input
+              type="number"
+              placeholder="+1"
+              id="people"
+              class="formInput"
+            />
+            Pessoa(s)
+          </p>
+          <button type="submit" class="formSumit">Calcular.!</button>
+        </form>
+      </div>
+      <div id="totalTip">
+        Gorjeta Total: R$ <span id="tip">0.00</span>
+        <p id="each">Volte Sempre.!</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="./script/script.js"></script>
+  </body>
+</html>
